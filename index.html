@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aTrillGoddess — Media Kit 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black:  #000000;
+  --bg:     #050505;
+  --card:   #0e0e0e;
+  --border: #1c1c1c;
+  --red:    #C1272D;
+  --red-bg: rgba(193,39,45,0.10);
+  --red-bd: rgba(193,39,45,0.30);
+  --white:  #ffffff;
+  --muted:  #b0b0b0;
+  --dim:    #2a2a2a;
+  --script: 'Great Vibes', cursive;
+  --ui:     'Raleway', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--ui);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── LAYOUT UTILITIES ── */
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 64px; }
+.rule { width: 24px; height: 1px; background: var(--red); margin-bottom: 18px; }
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.section { padding: 96px 0; border-bottom: 1px solid var(--border); }
+
+/* ════════════════════════════════════════
+   HERO
+════════════════════════════════════════ */
+.hero {
+  background: var(--black);
+  padding: 72px 64px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: visible;
+}
+
+/* Centered name row */
+.hero-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.hero-inner {
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+}
+.hero-name {
+  font-family: var(--script);
+  font-size: 120px;
+  line-height: 1;
+  color: var(--white);
+  position: relative;
+  z-index: 2;
+}
+.hero-sub {
+  margin-top: 44px;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hero-tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255,255,255,0.5);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+/* Divider */
+.hero-divider {
+  width: 1px;
+  height: 20px;
+  background: #1a1a1a;
+  margin: 10px auto;
+}
+
+/* Profile + stats row */
+.hero-body {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Circle photo */
+.hero-avatar {
+  flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #1e1e1e;
+  position: relative;
+}
+.hero-avatar image-slot {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+/* Stats side */
+.hero-stats-wrap { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+
+/* Engagement badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px;
+  background: var(--red-bg);
+  border: 1px solid var(--red-bd);
+  border-radius: 40px;
+  align-self: flex-start;
+}
+.hero-badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--red);
+  flex-shrink: 0;
+  animation: blink 2s ease-in-out infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+.hero-badge-text {
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.03em;
+}
+.hero-badge-text strong { color: var(--red); font-weight: 600; }
+
+/* Stats grid */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #141414;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.hs-cell {
+  padding: 20px 18px;
+  border-right: 1px solid #141414;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hs-cell:last-child { border-right: none; }
+.hs-label {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #888;
+}
+.hs-val {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.hs-val.accent { color: var(--red); }
+
+.kit-label {
+  position: absolute;
+  bottom: 20px;
+  right: 64px;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #1c1c1c;
+}
+
+/* ════════════════════════════════════════
+   ABOUT
+════════════════════════════════════════ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.section-script {
+  font-family: var(--script);
+  font-size: 58px;
+  line-height: 1;
+}
+.bio-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: rgba(255,255,255,0.9);
+}
+.bio-text strong { color: var(--white); font-weight: 500; }
+
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+.pill {
+  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.pill.red { border-color: var(--red-bd); color: var(--red); }
+
+.ct-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+.ct-item {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.ct-name {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.ct-desc { font-size: 12px; color: #b0b0b0; }
+
+.photos-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 52px;
+}
+
+/* ── Instagram Gallery Carousel ── */
+.ig-carousel-outer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ig-track {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.ig-slot {
+  flex: 0 0 calc(33.333% - 8px);
+  aspect-ratio: 9 / 16;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ig-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* ── Embed Ticker ── */
+.embed-ticker-wrap {
+  margin-top: 52px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+.embed-ticker-wrap::before,
+.embed-ticker-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.embed-ticker-wrap::before { left: 0; background: linear-gradient(to right, #0a0a0a 30%, transparent); }
+.embed-ticker-wrap::after  { right: 0; background: linear-gradient(to left,  #0a0a0a 30%, transparent); }
+.embed-ticker {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: ticker-rtl 28s linear infinite;
+}
+.embed-ticker:hover { animation-play-state: paused; }
+@keyframes ticker-rtl {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.embed-card {
+  flex-shrink: 0;
+  width: 280px;
+  height: 498px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.embed-card img,
+.embed-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.media-slot {
+  position: relative;
+  height: 210px;
+  border-radius: 8px;
+  border: 1px dashed rgba(255,255,255,0.15);
+  background: #0d0d0d;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.media-slot:hover { border-color: rgba(255,255,255,0.35); }
+.media-slot.drag-over { border-color: var(--red); border-style: solid; }
+.media-slot .ms-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.3);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.media-slot .ms-placeholder svg { opacity: 0.4; }
+.media-slot .ms-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.media-slot .ms-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.media-slot.has-media .ms-placeholder { display: none; }
+.media-slot.has-media .ms-img,
+.media-slot.has-media .ms-video { display: block; }
+.media-slot .ms-clear {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.7);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 5;
+  line-height: 1;
+}
+.media-slot:hover .ms-clear { opacity: 1; }
+.media-slot .ms-type-badge {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(0,0,0,0.6);
+  color: rgba(255,255,255,0.7);
+  padding: 2px 6px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+.media-slot.has-media:hover .ms-type-badge { opacity: 1; }
+
+/* ════════════════════════════════════════
+   PLATFORM STATS
+════════════════════════════════════════ */
+/* Carousel wrapper */
+.plat-carousel-hdr {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+.plat-dots {
+  display: flex;
+  gap: 8px;
+}
+.plat-dot {
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.18);
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s;
+  padding: 0;
+}
+.plat-dot.active { background: var(--red); }
+.plat-outer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.plat-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s;
+  align-self: center;
+}
+.plat-arrow:hover { border-color: var(--red); background: var(--red-bg); }
+.plat-track {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.plat-track::-webkit-scrollbar { display: none; }
+.plat-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+.platform-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 24px;
+}
+.platform-title {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.platform-handle {
+  font-size: 12px;
+  color: #b0b0b0;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+.platform-eng-badge {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: var(--red-bg);
+  border: 1px solid var(--red-bd);
+  border-radius: 40px;
+}
+.peb-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+.peb-text { font-size: 12px; }
+.peb-text strong { color: var(--red); }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.sg-cell {
+  background: var(--card);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+.sg-cell.hot { background: #0c0000; }
+.sg-cell.hot::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--red);
+}
+.sg-label {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #333;
+}
+.sg-val {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.sg-val.red { color: var(--red); }
+.sg-note { font-size: 11px; color: #888; }
+
+/* ════════════════════════════════════════
+   AUDIENCE DEMOGRAPHICS
+════════════════════════════════════════ */
+.demo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+.demo-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px 32px;
+}
+.demo-card-label {
+  font-size: 9px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 22px;
+}
+
+/* Gender */
+.gender-split {
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.gs-male { background: #3a3a3a; flex: 44; }
+.gs-female { background: var(--red); flex: 55; }
+.gender-legend {
+  display: flex;
+  gap: 32px;
+}
+.gl-item { display: flex; flex-direction: column; gap: 3px; }
+.gl-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.gl-dot { width: 7px; height: 7px; border-radius: 50%; }
+.gl-dot.m { background: #3a3a3a; }
+.gl-dot.f { background: var(--red); }
+.gl-val { font-size: 30px; font-weight: 600; letter-spacing: -0.02em; }
+
+/* Age bars */
+.age-rows { display: flex; flex-direction: column; gap: 13px; }
+.age-row { display: grid; grid-template-columns: 52px 1fr 44px; align-items: center; gap: 14px; }
+.age-lbl { font-size: 11px; color: var(--muted); }
+.age-track { height: 3px; background: #191919; border-radius: 2px; overflow: hidden; }
+.age-fill { height: 100%; border-radius: 2px; background: rgba(255,255,255,0.3); }
+.age-fill.top { background: var(--red); }
+.age-pct { font-size: 12px; font-weight: 500; text-align: right; }
+.age-pct.top { color: var(--red); }
+
+/* Location bars */
+.loc-rows { display: flex; flex-direction: column; gap: 14px; }
+.loc-row { display: flex; flex-direction: column; gap: 5px; }
+.loc-head { display: flex; justify-content: space-between; }
+.loc-name { font-size: 12px; color: #ccc; }
+.loc-pct { font-size: 12px; font-weight: 500; }
+.loc-track { height: 2px; background: #191919; border-radius: 1px; overflow: hidden; }
+.loc-fill { height: 100%; border-radius: 1px; }
+.loc-fill.primary { background: rgba(255,255,255,0.5); }
+.loc-fill.secondary { background: #333; }
+
+/* ════════════════════════════════════════
+   PACKAGES
+════════════════════════════════════════ */
+.pkg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 40px;
+}
+.pkg {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+.pkg.featured {
+  border-color: var(--red);
+  background: #090000;
+}
+.pkg-badge {
+  position: absolute;
+  top: -1px; right: 20px;
+  background: var(--red);
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 0 0 4px 4px;
+}
+.pkg-tier { font-size: 9px; letter-spacing: 0.35em; text-transform: uppercase; color: #333; }
+.pkg-name { font-family: var(--script); font-size: 44px; line-height: 1; }
+.pkg-price {
+  font-size: 12px;
+  color: var(--muted);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.pkg-list { display: flex; flex-direction: column; gap: 8px; }
+.pkg-item {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1.5;
+}
+.pkg-item::before { content: '—'; color: var(--red); flex-shrink: 0; }
+
+/* Email CTA + social links */
+.email-cta {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 24px;
+  background: var(--red-bg);
+  border: 1px solid var(--red-bd);
+  border-radius: 6px;
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+.email-cta:hover { background: rgba(180,60,60,0.18); border-color: var(--red); }
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+.social-link:hover { color: #fff; }
+
+/* ════════════════════════════════════════
+   CTA
+════════════════════════════════════════ */
+.cta-section {
+  background: var(--black);
+  padding: 100px 0;
+}
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.cta-heading {
+  font-family: var(--script);
+  font-size: 80px;
+  line-height: 1;
+}
+.cta-body {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #b0b0b0;
+  line-height: 1.9;
+  max-width: 380px;
+}
+.contact-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 40px;
+}
+.contact-rows { display: flex; flex-direction: column; }
+.cr {
+  padding: 16px 0;
+  border-bottom: 1px solid #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.cr:last-child { border-bottom: none; }
+.cr-type { font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase; color: #2e2e2e; }
+.cr-val { font-size: 15px; font-weight: 300; }
+
+/* ════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════ */
+footer {
+  padding: 28px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #0d0d0d;
+}
+.footer-mark { font-family: var(--script); font-size: 26px; color: #1e1e1e; }
+.footer-note { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #1a1a1a; }
+
+/* ════════════════════════════════════════
+   SECTION DIVIDER ROW
+════════════════════════════════════════ */
+.divider-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.divider-line { flex: 1; height: 1px; background: var(--border); }
+
+/* ════════════════════════════════════════
+   RESPONSIVE — TABLET (≤900px)
+════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .wrap { padding: 0 32px; }
+  .hero { padding: 56px 32px 48px; }
+  .hero-name { font-size: 80px; }
+  .hero-body { gap: 40px; max-width: 100%; }
+  .hero-avatar { width: 180px; height: 180px; }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .demo-grid { grid-template-columns: 1fr; gap: 40px; }
+  .pkg-grid { grid-template-columns: repeat(2, 1fr); }
+  .photos-strip { grid-template-columns: repeat(2, 1fr); }
+  .ig-slot { flex: 0 0 calc(50% - 6px); }
+  .plat-outer { gap: 12px; }
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — MOBILE (≤640px)
+════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .wrap { padding: 0 20px; }
+  .section { padding: 56px 0; }
+  .hero { padding: 48px 20px 40px; }
+  .hero-name { font-size: clamp(44px, 12vw, 72px); }
+  .hero-sub { margin-top: 28px; letter-spacing: 0.2em; }
+  .hero-body { flex-direction: column; align-items: center; gap: 28px; max-width: 100%; }
+  .hero-avatar { width: 160px; height: 160px; }
+  .hero-stats-wrap { width: 100%; }
+  .hero-badge { justify-content: center; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .hs-cell { padding: 16px 12px; }
+  .hs-val { font-size: 28px; }
+  .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .photos-strip { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .media-slot { height: 160px; }
+  .plat-outer { gap: 10px; }
+  .plat-arrow { width: 30px; height: 30px; font-size: 14px; }
+  .platform-header { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .sg-cell { padding: 20px 16px; }
+  .sg-val { font-size: 26px; }
+  .plat-carousel-hdr { margin-bottom: 20px; }
+  .ig-carousel-outer { gap: 10px; }
+  .ig-slot { flex: 0 0 calc(75% - 6px); scroll-snap-align: start; }
+  .ig-track { scroll-snap-type: x mandatory; -ms-overflow-style: none; scrollbar-width: none; }
+  .ig-track::-webkit-scrollbar { display: none; }
+  .demo-grid { grid-template-columns: 1fr; gap: 32px; }
+  .pkg-grid { grid-template-columns: 1fr; gap: 12px; }
+  .pkg { padding: 28px 22px; }
+  .pkg-name { font-size: 36px; }
+  .contact-card { max-width: 100%; }
+  .cta-heading { font-size: clamp(32px, 9vw, 56px); }
+  .cta-grid { grid-template-columns: 1fr; gap: 40px; }
+  .cta-section { padding: 64px 0; }
+  .kit-label { font-size: 8px; letter-spacing: 0.2em; }
+}
+</style>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56"><rect width="80" height="56" fill="#0a0a0a"/><text x="40" y="32" text-anchor="middle" font-family="serif" font-size="18" fill="#c8102e" opacity="0.9">ATG</text></svg></template>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero">
+<div class="hero-inner">
+
+  <!-- Centered name -->  
+  <div class="hero-top">
+    <div class="hero-name">aTrillGoddess</div>
+    <div class="hero-sub">Coco Landry &nbsp;·&nbsp; Content Creator &nbsp;·&nbsp; 2026</div>
+    <div class="hero-tagline">Fashion. Beauty. Wellness. Lifestyle.</div>
+  </div>
+
+  <!-- Profile photo + stats -->
+  <div class="hero-body">
+    <div class="hero-avatar">
+      <img src="hero-photo.webp" alt="Coco Landry" style="width:100%;height:100%;object-fit:cover;object-position:50% 12%;border-radius:50%;">
+    </div>
+
+    <div class="hero-stats-wrap">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <div class="hero-badge-text">TikTok engagement <strong>8.0%</strong> — Top 50% of creators</div>
+      </div>
+      <div class="hero-stats">
+        <div class="hs-cell">
+          <div class="hs-label">Total Following</div>
+          <div class="hs-val">2.4k</div>
+        </div>
+        <div class="hs-cell">
+          <div class="hs-label">TikTok</div>
+          <div class="hs-val">2.3k</div>
+        </div>
+        <div class="hs-cell">
+          <div class="hs-label">Engagement</div>
+          <div class="hs-val accent">8.0%</div>
+        </div>
+        <div class="hs-cell">
+          <div class="hs-label">Avg Views</div>
+          <div class="hs-val">872</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="kit-label">Media Kit · 2026</div>
+</div><!-- /hero-inner -->
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="about-grid">
+
+      <div>
+        <div class="eyebrow">01 — About</div>
+        <div class="rule"></div>
+        <div class="section-script">The Creator</div>
+        <div class="bio-text">
+          Contemporary, personality-driven creator sharing <strong>fashion, beauty, wellness, lifestyle</strong>, creator life, and entertainment through a blend of aspirational visuals, authentic personality, and creative self-expression. Through her content, she inspires women to explore style, beauty, confidence, and reinvention while embracing their individuality.
+        </div>
+        <div class="pillars">
+          <div class="pill red">Fashion</div>
+          <div class="pill red">Beauty</div>
+          <div class="pill">Wellness</div>
+          <div class="pill">Lifestyle</div>
+          <div class="pill">Creator Life</div>
+          <div class="pill">Entertainment</div>
+          <div class="pill">TikTok LIVE</div>
+          <div class="pill">UGC</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="eyebrow">Content Formats</div>
+        <div class="rule"></div>
+        <div class="ct-list">
+          <div class="ct-item">
+            <div class="ct-name">Short-Form Video</div>
+            <div class="ct-desc">GRWM + beauty content, hauls, try-ons, product showcases, and lifestyle aesthetics</div>
+          </div>
+          <div class="ct-item" style="border-color:var(--red-bd);">
+            <div class="ct-name" style="color:var(--red);">● TikTok LIVE</div>
+            <div class="ct-desc">Shoppable livestreams and lifestyle aesthetics · Tue / Thu · 8–10 PM CST</div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-name">Instagram</div>
+            <div class="ct-desc">Model-forward lifestyle aesthetics</div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-name">UGC</div>
+            <div class="ct-desc">Testimonials, Reviews, Unboxings, Product Demonstrations, GRWMs, Tutorials, Lifestyle UGC, and Voiceover Videos</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Embed ticker -->
+    <div class="embed-ticker-wrap">
+      <div class="embed-ticker" id="embed-ticker">
+        <!-- === ORIGINALS === -->
+        <div class="embed-card"><video src="uploads/snaptik_7643937694296313102_v3.mp4" autoplay muted loop playsinline></video></div>
+        <div class="embed-card"><video src="uploads/snaptik_7644306322590141709_v3.mp4" autoplay muted loop playsinline></video></div>
+        <div class="embed-card"><video src="uploads/snaptik_7645429521432268045_v3.mp4" autoplay muted loop playsinline></video></div>
+        <div class="embed-card"><video src="uploads/snaptik_7646481306670386445_v3.mp4" autoplay muted loop playsinline></video></div>
+        <!-- === DUPLICATES for seamless loop === -->
+        <div class="embed-card"><video src="uploads/snaptik_7643937694296313102_v3.mp4" autoplay muted loop playsinline></video></div>
+        <div class="embed-card"><video src="uploads/snaptik_7644306322590141709_v3.mp4" autoplay muted loop playsinline></video></div>
+        <div class="embed-card"><video src="uploads/snaptik_7645429521432268045_v3.mp4" autoplay muted loop playsinline></video></div>
+        <div class="embed-card"><video src="uploads/snaptik_7646481306670386445_v3.mp4" autoplay muted loop playsinline></video></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PLATFORM STATS
+══════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">02 — By the Numbers</div>
+    <div class="rule"></div>
+
+    <!-- Dots -->
+    <div class="plat-carousel-hdr">
+      <div class="plat-dots">
+        <button class="plat-dot active" data-idx="0"></button>
+        <button class="plat-dot" data-idx="1"></button>
+      </div>
+    </div>
+
+    <!-- Track with side arrows -->
+    <div class="plat-outer">
+      <button class="plat-arrow" id="plat-prev">&#8592;</button>
+
+      <div class="plat-track" id="plat-track">
+
+      <!-- TIKTOK SLIDE -->
+      <div class="plat-slide">
+        <div class="platform-header">
+          <div>
+            <div class="platform-title">TikTok</div>
+            <div class="platform-handle">@ATRILLGODDESSLIVE &middot; Data from last 30 days &middot; Updated Jun 15</div>
+          </div>
+          <div class="platform-eng-badge">
+            <div class="peb-dot"></div>
+            <div class="peb-text">Engagement rate of <strong>8.0%</strong> &mdash; higher than Top 50% of creators</div>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="sg-cell">
+            <div class="sg-label">Followers</div>
+            <div class="sg-val">2.3k</div>
+          </div>
+          <div class="sg-cell hot">
+            <div class="sg-label">Engagement Rate</div>
+            <div class="sg-val red">8.0%</div>
+            <div class="sg-note">Top 50% of creators</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Total Videos</div>
+            <div class="sg-val">9</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Total Impressions</div>
+            <div class="sg-val">7.9k</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Total Engagements</div>
+            <div class="sg-val">616</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Avg Views</div>
+            <div class="sg-val">872</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Avg Likes</div>
+            <div class="sg-val">66</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Avg Comments</div>
+            <div class="sg-val">2</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Combined Following</div>
+            <div class="sg-val">2.4k</div>
+            <div class="sg-note">TikTok &middot; Instagram</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INSTAGRAM SLIDE -->
+      <div class="plat-slide">
+        <div class="platform-header">
+          <div>
+            <div class="platform-title">Instagram</div>
+            <div class="platform-handle">@ATRILLGODDESS &middot; Data from last 30 days &middot; Updated Jun 16</div>
+          </div>
+          <div class="platform-eng-badge">
+            <div class="peb-dot"></div>
+            <div class="peb-text">Engagement rate of <strong>9.2%</strong> &mdash; higher than Top 50% of creators</div>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="sg-cell">
+            <div class="sg-label">Followers</div>
+            <div class="sg-val">76</div>
+          </div>
+          <div class="sg-cell hot">
+            <div class="sg-label">Engagement Rate</div>
+            <div class="sg-val red">9.2%</div>
+            <div class="sg-note">Top 50% of creators</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Follower Engagement</div>
+            <div class="sg-val">19.7%</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Total Posts</div>
+            <div class="sg-val">6</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Total Impressions</div>
+            <div class="sg-val">963</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Total Engagements</div>
+            <div class="sg-val">88</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">30-Day Reach</div>
+            <div class="sg-val">156</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Avg Likes</div>
+            <div class="sg-val">12</div>
+          </div>
+          <div class="sg-cell">
+            <div class="sg-label">Avg Comments</div>
+            <div class="sg-val">2</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /plat-track -->
+      <button class="plat-arrow" id="plat-next">&#8594;</button>
+    </div><!-- /plat-outer -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     INSTAGRAM GALLERY
+══════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Instagram</div>
+    <div class="rule"></div>
+    <div style="font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.35); margin-bottom:24px;">@atrillgoddess · Drop your photos below</div>
+
+    <div class="ig-carousel-outer">
+      <button class="plat-arrow" id="ig-prev">&#8592;</button>
+      <div class="ig-track" id="ig-track">
+        <div class="ig-slot"><img src="uploads/5D558EF7-7231-4CF3-8150-B8ED38250781_1_105_c.jpeg" alt="Instagram"></div>
+        <div class="ig-slot"><img src="uploads/3FC2BC41-3098-473E-B73A-82CD1F71414E_1_105_c.jpeg" alt="Instagram"></div>
+        <div class="ig-slot"><img src="uploads/2676083B-0CC8-4264-AC4C-D689E3072FA0_1_105_c.jpeg" alt="Instagram"></div>
+        <div class="ig-slot"><img src="uploads/7CDD00DD-830E-4779-ABBA-E2EB754D76D5_1_105_c.jpeg" alt="Instagram"></div>
+        <div class="ig-slot"><img src="uploads/9E453886-79AB-453F-A549-C81569B3CAE9_1_105_c.jpeg" alt="Instagram"></div>
+      </div>
+      <button class="plat-arrow" id="ig-next">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     AUDIENCE DEMOGRAPHICS
+══════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">03 — Audience</div>
+    <div class="rule"></div>
+    <div style="font-size:32px; font-weight:600; letter-spacing:-0.02em;">Who's Watching</div>
+
+    <div class="demo-grid">
+
+      <!-- Gender -->
+      <div class="demo-card">
+        <div class="demo-card-label">Gender</div>
+        <div class="gender-split">
+          <div class="gs-male"></div>
+          <div class="gs-female"></div>
+        </div>
+        <div class="gender-legend">
+          <div class="gl-item">
+            <div class="gl-label"><div class="gl-dot m"></div>Male</div>
+            <div class="gl-val">44.0%</div>
+          </div>
+          <div class="gl-item">
+            <div class="gl-label"><div class="gl-dot f"></div>Female</div>
+            <div class="gl-val">55.0%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Age -->
+      <div class="demo-card">
+        <div class="demo-card-label">Age Breakdown</div>
+        <div class="age-rows">
+          <div class="age-row">
+            <div class="age-lbl">18–24</div>
+            <div class="age-track"><div class="age-fill" style="width:5.5%"></div></div>
+            <div class="age-pct">5.5%</div>
+          </div>
+          <div class="age-row">
+            <div class="age-lbl">25–34</div>
+            <div class="age-track"><div class="age-fill top" style="width:51.3%"></div></div>
+            <div class="age-pct top">51.3%</div>
+          </div>
+          <div class="age-row">
+            <div class="age-lbl">35–44</div>
+            <div class="age-track"><div class="age-fill" style="width:23.8%"></div></div>
+            <div class="age-pct">23.8%</div>
+          </div>
+          <div class="age-row">
+            <div class="age-lbl">45–54</div>
+            <div class="age-track"><div class="age-fill" style="width:22.7%"></div></div>
+            <div class="age-pct">22.7%</div>
+          </div>
+          <div class="age-row">
+            <div class="age-lbl">55–64</div>
+            <div class="age-track"><div class="age-fill" style="width:7.3%"></div></div>
+            <div class="age-pct">7.3%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Countries -->
+      <div class="demo-card">
+        <div class="demo-card-label">Top Countries</div>
+        <div class="loc-rows">
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇺🇸 United States</div>
+              <div class="loc-pct">90.7%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill primary" style="width:100%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🌍 Others</div>
+              <div class="loc-pct">9.3%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:10.3%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇳🇬 Nigeria</div>
+              <div class="loc-pct">2.1%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:3.1%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇨🇦 Canada</div>
+              <div class="loc-pct">0.9%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:1.3%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇯🇲 Jamaica</div>
+              <div class="loc-pct">0.9%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:1.3%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇿🇦 South Africa</div>
+              <div class="loc-pct">0.6%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:0.9%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cities -->
+      <div class="demo-card">
+        <div class="demo-card-label">Top Cities</div>
+        <div class="loc-rows">
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇺🇸 Chicago</div>
+              <div class="loc-pct">2.7%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill primary" style="width:100%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇺🇸 Houston</div>
+              <div class="loc-pct">1.8%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:66.7%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇺🇸 Atlanta</div>
+              <div class="loc-pct">1.7%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:63%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇺🇸 Brooklyn</div>
+              <div class="loc-pct">1.6%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:59.3%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇺🇸 Detroit</div>
+              <div class="loc-pct">1.4%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:51.9%"></div></div>
+          </div>
+          <div class="loc-row">
+            <div class="loc-head">
+              <div class="loc-name">🇳🇬 Abeokuta</div>
+              <div class="loc-pct">0.7%</div>
+            </div>
+            <div class="loc-track"><div class="loc-fill secondary" style="width:25.9%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PARTNERSHIP PACKAGES
+══════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">04 — Partnerships</div>
+    <div class="rule"></div>
+    <div style="font-size:32px; font-weight:600; letter-spacing:-0.02em;">Work With Me</div>
+
+    <div class="pkg-grid">
+
+      <div class="pkg">
+        <div>
+          <div class="pkg-tier">Entry</div>
+          <div class="pkg-name">Affiliate</div>
+        </div>
+        <div class="pkg-price">Commission-based · Flexible partnership structures</div>
+        <div class="pkg-list">
+          <div class="pkg-item">Product integrated into organic content</div>
+          <div class="pkg-item">TikTok Shop &amp; GMV Max compatible</div>
+          <div class="pkg-item">Cross-platform affiliate opportunities</div>
+          <div class="pkg-item">Performance-based partnerships</div>
+        </div>
+      </div>
+
+      <div class="pkg featured">
+        <div class="pkg-badge">Most Requested</div>
+        <div>
+          <div class="pkg-tier">Signature</div>
+          <div class="pkg-name">Sponsored</div>
+        </div>
+        <div class="pkg-price">Custom campaign pricing</div>
+        <div class="pkg-list">
+          <div class="pkg-item">Dedicated TikTok or Instagram feature</div>
+          <div class="pkg-item">Authentic creator-led storytelling</div>
+          <div class="pkg-item">LIVE integration available</div>
+          <div class="pkg-item">Story coverage included</div>
+        </div>
+      </div>
+
+      <div class="pkg">
+        <div>
+          <div class="pkg-tier">Content Only</div>
+          <div class="pkg-name">UGC</div>
+        </div>
+        <div class="pkg-price">Custom content creation</div>
+        <div class="pkg-list">
+          <div class="pkg-item">Testimonials, reviews, and unboxings</div>
+          <div class="pkg-item">Product demonstrations and tutorials</div>
+          <div class="pkg-item">Lifestyle and voiceover content</div>
+          <div class="pkg-item">Natural on-camera or AI-generated UGC</div>
+        </div>
+      </div>
+
+      <div class="pkg">
+        <div>
+          <div class="pkg-tier">Live Commerce</div>
+          <div class="pkg-name">Live</div>
+        </div>
+        <div class="pkg-price">Shoppable livestreams and lifestyle aesthetics</div>
+        <div class="pkg-list">
+          <div class="pkg-item">Real-time audience engagement</div>
+          <div class="pkg-item">Product discovery and demonstrations</div>
+          <div class="pkg-item">TikTok Shop integration</div>
+          <div class="pkg-item">Beauty, fashion, and lifestyle content</div>
+        </div>
+      </div>
+
+      <div class="pkg">
+        <div>
+          <div class="pkg-tier">Ongoing</div>
+          <div class="pkg-name">Ambassador</div>
+        </div>
+        <div class="pkg-price">Ongoing brand partnerships</div>
+        <div class="pkg-list">
+          <div class="pkg-item">Consistent cross-platform visibility</div>
+          <div class="pkg-item">LIVE, social, and story integration</div>
+          <div class="pkg-item">Affiliate and sponsored opportunities</div>
+          <div class="pkg-item">Long-term relationship building</div>
+        </div>
+      </div>
+
+      <div class="pkg">
+        <div>
+          <div class="pkg-tier">Custom</div>
+          <div class="pkg-name">Bespoke</div>
+        </div>
+        <div class="pkg-price">Customized partnership opportunities</div>
+        <div class="pkg-list">
+          <div class="pkg-item">Built around your campaign goals</div>
+          <div class="pkg-item">Multi-platform activation options</div>
+          <div class="pkg-item">Flexible deliverables and timelines</div>
+          <div class="pkg-item">Let's create something unique</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CTA / CONTACT
+══════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-grid">
+      <div>
+        <div class="rule"></div>
+        <div class="cta-heading">Let's Work<br>Together</div>
+        <div class="cta-body">Ready to reach an engaged, culture-forward community who acts on recommendations and shows up every week? Let's build something that converts.</div>
+      </div>
+      <div class="contact-card">
+        <div class="eyebrow" style="margin-bottom:20px;">Get in Touch</div>
+        <div class="contact-rows">
+          <div class="cr">
+            <div class="cr-type">Creator</div>
+            <div class="cr-val">Coco Landry</div>
+          </div>
+          <div class="cr">
+            <div class="cr-type">Manager</div>
+            <div class="cr-val">Chasity Landry</div>
+          </div>
+        </div>
+
+        <a href="mailto:atrillgoddess@gmail.com" class="email-cta">atrillgoddess@gmail.com</a>
+
+        <div class="social-links">
+          <a href="https://www.tiktok.com/@atrillgoddesslive" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+            <span>@aTrillGoddessLIVE</span>
+          </a>
+          <a href="https://www.instagram.com/atrillgoddess" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <span>@aTrillGoddess</span>
+          </a>
+          <a href="https://beacons.ai/atrillgoddess/mediakit?__v=14.325.0" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+            <span>Media Kit</span>
+          </a>
+          <a href="https://www.backstage.com/u/atrillgoddess/" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.5l5 3-5 3v-6zm-6 9V8.5l4.5 2.75L6 14v1.5z"/></svg>
+            <span>Backstage</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-mark">aTrillGoddess</div>
+  <div class="footer-note">Media Kit · 2026 · All rights reserved</div>
+</footer>
+
+<script>
+// ── Media Slots: drag-drop + click, images & videos, IndexedDB persistence ──
+(function() {
+  const DB_NAME = 'atg-media-slots';
+  const DB_VER  = 1;
+  const STORE   = 'slots';
+  let db;
+
+  function openDB(cb) {
+    if (db) { cb(db); return; }
+    const req = indexedDB.open(DB_NAME, DB_VER);
+    req.onupgradeneeded = e => e.target.result.createObjectStore(STORE);
+    req.onsuccess = e => { db = e.target.result; cb(db); };
+    req.onerror   = () => {};
+  }
+
+  function saveSlot(id, type, blob) {
+    openDB(db => {
+      const tx = db.transaction(STORE, 'readwrite');
+      tx.objectStore(STORE).put({ type, blob }, id);
+    });
+  }
+
+  function clearSlot(id) {
+    openDB(db => {
+      const tx = db.transaction(STORE, 'readwrite');
+      tx.objectStore(STORE).delete(id);
+    });
+  }
+
+  function loadAll() {
+    openDB(db => {
+      const tx = db.transaction(STORE, 'readonly');
+      const req = tx.objectStore(STORE).openCursor();
+      req.onsuccess = e => {
+        const cursor = e.target.result;
+        if (!cursor) return;
+        const el = document.querySelector('[data-slot="' + cursor.key + '"]');
+        if (el) applyMedia(el, cursor.value.type, cursor.value.blob);
+        cursor.continue();
+      };
+    });
+  }
+
+  function applyMedia(slot, type, blob) {
+    const url    = URL.createObjectURL(blob);
+    const badge  = slot.querySelector('.ms-type-badge');
+    if (type === 'video') {
+      const vid = slot.querySelector('.ms-video');
+      const img = slot.querySelector('.ms-img');
+      img.style.display = 'none';
+      vid.src = url;
+      badge.textContent = 'Video';
+    } else {
+      const img = slot.querySelector('.ms-img');
+      const vid = slot.querySelector('.ms-video');
+      vid.style.display = 'none';
+      img.src = url;
+      badge.textContent = 'Photo';
+    }
+    slot.classList.add('has-media');
+  }
+
+  function handleFile(slot, file) {
+    if (!file) return;
+    const isVideo = file.type.startsWith('video/');
+    const isImage = file.type.startsWith('image/');
+    if (!isVideo && !isImage) return;
+    const type = isVideo ? 'video' : 'image';
+    applyMedia(slot, type, file);
+    saveSlot(slot.dataset.slot, type, file);
+  }
+
+  document.querySelectorAll('.media-slot').forEach(slot => {
+    // Hidden file input
+    const input = document.createElement('input');
+    input.type   = 'file';
+    input.accept = 'image/*,video/*';
+    input.style.display = 'none';
+    slot.appendChild(input);
+
+    // Click to pick
+    slot.addEventListener('click', e => {
+      if (e.target.classList.contains('ms-clear')) return;
+      input.click();
+    });
+    input.addEventListener('change', () => handleFile(slot, input.files[0]));
+
+    // Drag & drop
+    slot.addEventListener('dragover', e => { e.preventDefault(); slot.classList.add('drag-over'); });
+    slot.addEventListener('dragleave', () => slot.classList.remove('drag-over'));
+    slot.addEventListener('drop', e => {
+      e.preventDefault();
+      slot.classList.remove('drag-over');
+      handleFile(slot, e.dataTransfer.files[0]);
+    });
+
+    // Clear button
+    slot.querySelector('.ms-clear').addEventListener('click', e => {
+      e.stopPropagation();
+      const vid = slot.querySelector('.ms-video');
+      const img = slot.querySelector('.ms-img');
+      vid.src = ''; img.src = '';
+      vid.style.display = ''; img.style.display = '';
+      slot.classList.remove('has-media');
+      clearSlot(slot.dataset.slot);
+    });
+  });
+
+  // Restore on load
+  loadAll();
+})();
+</script>
+<script>
+// Instagram gallery carousel
+(function() {
+  const track = document.getElementById('ig-track');
+  const prev  = document.getElementById('ig-prev');
+  const next  = document.getElementById('ig-next');
+  if (!track) return;
+  const scrollAmt = () => track.offsetWidth / 3 + 12;
+  prev.addEventListener('click', () => track.scrollBy({ left: -scrollAmt(), behavior: 'smooth' }));
+  next.addEventListener('click', () => track.scrollBy({ left:  scrollAmt(), behavior: 'smooth' }));
+})();
+(function() {
+  const track = document.getElementById('plat-track');
+  const dots  = document.querySelectorAll('.plat-dot');
+  const prev  = document.getElementById('plat-prev');
+  const next  = document.getElementById('plat-next');
+  let current = 0;
+  const total = dots.length;
+
+  function goTo(idx) {
+    current = (idx + total) % total;
+    track.scrollTo({ left: current * track.offsetWidth, behavior: 'smooth' });
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+
+  // Sync dots on manual swipe
+  track.addEventListener('scroll', () => {
+    const idx = Math.round(track.scrollLeft / track.offsetWidth);
+    if (idx !== current) {
+      current = idx;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
