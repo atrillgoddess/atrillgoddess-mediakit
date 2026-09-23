@@ -342,6 +342,9 @@ body {
   object-position: top center;
   display: block;
 }
+.portfolio-link-wrap { margin-top: 30px; display: flex; justify-content: center; }
+.portfolio-link { color: var(--white); text-decoration: none; padding: 13px 22px; border: 1px solid var(--red-bd); border-radius: 999px; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; transition: background .2s, border-color .2s; }
+.portfolio-link:hover { background: var(--red-bg); border-color: var(--red); }
 .media-slot {
   position: relative;
   height: 210px;
@@ -947,21 +950,20 @@ footer {
 
     </div>
 
-    <!-- Embed ticker -->
+    <!-- Video carousel remains the media-kit preview; full categorized work lives separately. -->
     <div class="embed-ticker-wrap">
       <div class="embed-ticker" id="embed-ticker">
-        <!-- === ORIGINALS === -->
         <div class="embed-card"><video src="uploads/snaptik_7643937694296313102_v3.mp4" autoplay muted loop playsinline></video></div>
         <div class="embed-card"><video src="uploads/snaptik_7644306322590141709_v3.mp4" autoplay muted loop playsinline></video></div>
         <div class="embed-card"><video src="uploads/snaptik_7645429521432268045_v3.mp4" autoplay muted loop playsinline></video></div>
         <div class="embed-card"><video src="uploads/snaptik_7646481306670386445_v3.mp4" autoplay muted loop playsinline></video></div>
-        <!-- === DUPLICATES for seamless loop === -->
         <div class="embed-card"><video src="uploads/snaptik_7643937694296313102_v3.mp4" autoplay muted loop playsinline></video></div>
         <div class="embed-card"><video src="uploads/snaptik_7644306322590141709_v3.mp4" autoplay muted loop playsinline></video></div>
         <div class="embed-card"><video src="uploads/snaptik_7645429521432268045_v3.mp4" autoplay muted loop playsinline></video></div>
         <div class="embed-card"><video src="uploads/snaptik_7646481306670386445_v3.mp4" autoplay muted loop playsinline></video></div>
       </div>
     </div>
+    <div class="portfolio-link-wrap"><a class="portfolio-link" href="portfolio/">View Full Video Portfolio &rarr;</a></div>
   </div>
 </section>
 
